@@ -1,3 +1,4 @@
+import 'package:expense_tracker/ui/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,8 +24,9 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+        backgroundColor: Colors.grey.shade100,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const LoginPage(),
     );
   }
 }
