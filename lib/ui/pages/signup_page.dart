@@ -3,14 +3,14 @@ import 'package:expense_tracker/ui/components/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _SignUpPageState createState() => _SignUpPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +41,7 @@ class _LoginPageState extends State<LoginPage> {
                           fontWeight: FontWeight.w500),
                     ),
                     Text(
-                      'Sign Up',
+                      'Sign In',
                       style: TextStyle(
                           fontFamily: 'GTWalsheimPro',
                           color: primaryColor,
@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     const SizedBox(height: 30),
                     const Text(
-                      'Login to your account',
+                      'SignUp to Expenses Tracker',
                       style: TextStyle(
                           fontFamily: 'GTWalsheimPro',
                           fontSize: 20,
