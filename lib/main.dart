@@ -2,6 +2,8 @@ import 'package:expense_tracker/ui/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/pages/signup_page.dart';
+import 'ui/pages/forgot_password_page.dart';
+import 'ui/pages/dashboard_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.grey.shade100,
       ),
-      home: const SignUpPage(),
+      home: const DashboardPage(),
     );
   }
 }

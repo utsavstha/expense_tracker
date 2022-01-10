@@ -3,14 +3,14 @@ import 'package:expense_tracker/ui/components/primary_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({Key? key}) : super(key: key);
+class ForgotPasswordPage extends StatefulWidget {
+  const ForgotPasswordPage({Key? key}) : super(key: key);
 
   @override
-  _SignUpPageState createState() => _SignUpPageState();
+  _ForgotPasswordPageState createState() => _ForgotPasswordPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,36 +63,11 @@ class _SignUpPageState extends State<SignUpPage> {
                     ),
                     const SizedBox(height: 30),
                     const Text(
-                      'SignUp to Expenses Tracker',
+                      'Forgot your password?',
                       style: TextStyle(
                           fontFamily: 'GTWalsheimPro',
                           fontSize: 20,
                           fontWeight: FontWeight.w700),
-                    ),
-                    const SizedBox(height: 30),
-                    const Text(
-                      'Your Name',
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w700),
-                    ),
-                    const TextField(
-                      keyboardType: TextInputType.name,
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w700),
-                      decoration: InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: 'Enter your name',
-                          hintStyle: TextStyle(
-                              fontFamily: 'GTWalsheimPro',
-                              fontSize: 14,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w700)),
                     ),
                     const SizedBox(height: 30),
                     const Text(
@@ -120,58 +95,9 @@ class _SignUpPageState extends State<SignUpPage> {
                               fontWeight: FontWeight.w700)),
                     ),
                     const SizedBox(height: 30),
-                    const Text(
-                      'Password',
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w700),
-                    ),
-                    const TextField(
-                      keyboardType: TextInputType.visiblePassword,
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w700),
-                      decoration: InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: '*******',
-                          hintStyle: TextStyle(
-                              fontFamily: 'GTWalsheimPro',
-                              fontSize: 14,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w700)),
-                    ),
-                    const SizedBox(height: 30),
-                    const Text(
-                      'Confirm Password',
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w700),
-                    ),
-                    const TextField(
-                      keyboardType: TextInputType.visiblePassword,
-                      style: TextStyle(
-                          fontFamily: 'GTWalsheimPro',
-                          fontSize: 14,
-                          color: Colors.black,
-                          fontWeight: FontWeight.w700),
-                      decoration: InputDecoration(
-                          border: UnderlineInputBorder(),
-                          hintText: '*******',
-                          hintStyle: TextStyle(
-                              fontFamily: 'GTWalsheimPro',
-                              fontSize: 14,
-                              color: Colors.grey,
-                              fontWeight: FontWeight.w700)),
-                    ),
-                    const SizedBox(height: 30),
                     PrimaryButton(
-                        title: "Sign Up", color: primaryColor, onPress: null),
+                        title: "Submit", color: primaryColor, onPress: null),
+                    const SizedBox(height: 30),
                   ],
                 ),
               ),
