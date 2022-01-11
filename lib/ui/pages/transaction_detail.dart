@@ -1,3 +1,4 @@
+import 'package:expense_tracker/ui/components/ticket_material.dart';
 import 'package:flutter/material.dart';
 
 class TransactionDetail extends StatefulWidget {
@@ -42,6 +43,68 @@ class _TransactionDetailState extends State<TransactionDetail> {
                 ],
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Container(
+                  padding: const EdgeInsets.all(16.0),
+                  width: double.infinity,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Payee',
+                        style: TextStyle(
+                            fontFamily: 'GTWalsheimPro',
+                            fontSize: 16,
+                            fontWeight: FontWeight.w300),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Breakfast',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontFamily: 'GTWalsheimPro',
+                            fontSize: 18,
+                            fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Payee',
+                                style: TextStyle(
+                                    fontFamily: 'GTWalsheimPro',
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w300),
+                              ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Text(
+                                'Breakfast',
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'GTWalsheimPro',
+                                    fontSize: 18,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            )
           ],
         ),
       ),
