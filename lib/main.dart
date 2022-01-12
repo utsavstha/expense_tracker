@@ -33,9 +33,7 @@ class MyApp extends StatelessWidget {
           '/dashboard': (context) => DashboardPage(),
           '/transaction_detal': (context) => TransactionDetail(),
           'add_transaction': (context) => AddTransactionPage()
-        }
-        // home: AddTransactionPage(),
-        );
+        });
   }
 }
 
