@@ -1,4 +1,5 @@
 import 'package:expense_tracker/ui/components/toolbar_component.dart';
+import 'package:expense_tracker/ui/components/transaction_list_component.dart';
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
@@ -23,52 +24,8 @@ class _DailyTransactionState extends State<DailyTransaction> {
         ),
         Expanded(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Container(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Breakfast',
-                            style: TextStyle(
-                                fontFamily: 'GTWalsheimPro',
-                                fontSize: 19,
-                                fontWeight: FontWeight.w500),
-                          ),
-                          Text(
-                            'Rs 400',
-                            style: TextStyle(
-                                fontFamily: 'GTWalsheimPro',
-                                fontSize: 16,
-                                color: accentColor,
-                                fontWeight: FontWeight.normal),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 6,
-                      ),
-                      Text(
-                        'Friday 10:00 AM',
-                        style: TextStyle(
-                            fontFamily: 'GTWalsheimPro',
-                            fontSize: 12,
-                            fontWeight: FontWeight.w300),
-                      ),
-                      Divider()
-                    ],
-                  ),
-                );
-              },
-            ),
-          ),
+              padding: const EdgeInsets.all(8.0),
+              child: TransactionListComponent()),
         )
       ],
     );
