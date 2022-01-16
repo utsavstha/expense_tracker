@@ -3,6 +3,7 @@ import 'package:expense_tracker/ui/pages/daily_transactions.dart';
 import 'package:flutter/material.dart';
 
 import 'budget_page.dart';
+import 'profile_page.dart';
 import 'stats_page.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -12,6 +13,7 @@ class DashboardPage extends StatelessWidget {
     StatsPage(),
     StatsPage(),
     BudgetPage(),
+    ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,7 @@ class DashboardPage extends StatelessWidget {
         ), //icon inside button
       ),
       body: SafeArea(
-        child: _widgetOptions.elementAt(3),
+        child: _widgetOptions.elementAt(4),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(

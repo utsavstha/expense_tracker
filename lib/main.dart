@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.grey.shade100,
       ),
-      home: CreateBudgetPage(),
+      home: DashboardPage(),
     );
   }
 }
