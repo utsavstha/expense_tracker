@@ -7,6 +7,7 @@ import 'ui/pages/dashboard_page.dart';
 import 'ui/pages/transaction_detail.dart';
 import 'ui/pages/stat_detail_page.dart';
 import 'ui/pages/create_budget_page.dart';
+import 'ui/pages/add_transaction_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         backgroundColor: Colors.grey.shade100,
       ),
-      home: DashboardPage(),
+      home: AddTransactionPage(),
     );
   }
 }
